@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #202329;
+  --secondary-color: #40434A;
+  --link-color: #009A9C;
+  --background-color: #efeeeb;
+  --font-headings: 'Playfair Display', serif;;
+  --font-body: 'Lora', serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-body);
+}
+
+/* -----------header----------- */
+.header {
+  height: 70px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  min-width: 320px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .5);
+}
+
+.header__logo {
+  width: 20%;
+  padding: 10px;
+}
+
+.header__logo img{
+  width: 100%;
+  display: block;
+  max-width: 40px;
+}
+
+.header__input {
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.header__input input {
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.header__user {
+  width: 20%;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-evenly;
+}
+
+.header__user span:first-child{
+  color: var(--secondary-color);
+  font-weight: bolder;
+  font-family: var(--font-headings);
+  display: none
+
+
+}
+
+.header__user-logo img{
+  width: 100%;
+  display: block;
+  max-width: 20px;
+}
+
+.header__user-icon {
+  background-image: url('https://i.postimg.cc/X7vC5b4s/arrow-down.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10px;
+  display: inline-block;
+}
