@@ -107,7 +107,7 @@ a {
 .container__recommend {
   display: grid;
   grid-template: auto / repeat(auto-fill, 289px);
-  grid-gap: 15px;
+  grid-gap: 15px 5px;
   justify-content: center;
 }
 
